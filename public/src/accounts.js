@@ -1,5 +1,3 @@
-const {getAuthorById} = require("./helpers");
-
 function findAccountById(accounts, id) {
   return accounts.find((account) => account.id === id);
 }
@@ -41,7 +39,7 @@ function getBooksPossessedByAccount(account, books, authors) {
     const author = getAuthorById(authors, book.authorId);
     const newBook = {
       ...book,
-      author
+      author,
     };
 
     return newBook;

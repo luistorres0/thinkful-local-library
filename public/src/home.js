@@ -1,5 +1,3 @@
-const { getBooksByAuthorId } = require("./helpers");
-
 function totalBooksCount(books) {
   return books.length;
 }
